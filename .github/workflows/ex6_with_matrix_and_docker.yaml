@@ -1,6 +1,9 @@
 name: npm cache with matrix and docker
 on:
   pull_request:
+  push:
+    branches:
+      - main
 
 jobs:
   run-npm-install-with-cache:
