@@ -4,6 +4,7 @@ on:
 
 jobs:
   run-npm-test4-from-another-repo:
-    uses: didaRatsimba/to_be_called_by_action/.github/workflows/to_be_called.yaml
+#    uses: didaRatsimba/to_be_called_by_action/.github/workflows/to_be_called.yaml
+    uses: didaRatsimba/to_be_called_by_action/actions/workflows/to_be_called.yaml
     with:
       specific-version: 14
