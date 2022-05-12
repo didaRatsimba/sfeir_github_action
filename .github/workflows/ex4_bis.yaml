@@ -1,0 +1,9 @@
+name: reusable_workflow_caller_bis
+on:
+  workflow_dispatch:
+
+jobs:
+  run-npm-test4-bis:
+    uses: ./.github/workflows/my_reusable_workflow.yaml
+    with:
+      specific-version: 14
