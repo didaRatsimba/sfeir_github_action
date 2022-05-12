@@ -25,6 +25,7 @@ jobs:
           npm install
 
   run-npm-test-with-cache:
+    needs: run-npm-install-with-cache
     runs-on: ubuntu-latest
     steps:
       - name: checkout
