@@ -1,0 +1,9 @@
+name: reusable_workflow_caller_bis
+on:
+  workflow_dispatch:
+
+jobs:
+  run-npm-test4-bis:
+    uses: didaRatsimba/to_be_called_by_action/.github/workflows/to_be_called.yaml
+    with:
+      specific-version: 14
