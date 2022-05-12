@@ -15,8 +15,8 @@ jobs:
       - name: cache node_modules install
         uses: actions/cache@v3
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-nedo-${{ hashFiles('**/package-lock.json') }}
+          path: node_modules
+          key: ${{ runner.os }}-nedos-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
       - name: run install
@@ -33,8 +33,8 @@ jobs:
       - name: cache node_modules test
         uses: actions/cache@v3
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-nedo-${{ hashFiles('**/package-lock.json') }}
+          path: node_modules
+          key: ${{ runner.os }}-nedos-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
       - name : setup node
