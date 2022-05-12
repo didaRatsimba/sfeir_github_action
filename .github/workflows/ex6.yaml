@@ -15,8 +15,8 @@ jobs:
       - name: cache node_modules install
         uses: actions/cache@v3
         with:
-          path: ~/.node_modules
-          key: ${{ runner.os }}-nodessa-${{ hashFiles('**/package-lock.json') }}
+          path: ~/.npm
+          key: ${{ runner.os }}-nedo-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
       - name: run install
@@ -34,7 +34,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.node_modules
-          key: ${{ runner.os }}-nodessa-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-nedo-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
       - name : setup node
