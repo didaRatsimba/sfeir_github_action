@@ -33,7 +33,7 @@ jobs:
       - name: cache node_modules test
         uses: actions/cache@v3
         with:
-          path: ~/.node_modules
+          path: ~/.npm
           key: ${{ runner.os }}-nedo-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
