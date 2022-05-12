@@ -6,15 +6,16 @@ jobs:
   run-npm-test4:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
-      - name : setup node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 'lts/*'
-      - name: run test
-        shell: bash
-        run: |
-          node -v
-          npm install
-          npm test
+      - uses: ./.my_reusable_workflow
+#      - name: checkout
+#        uses: actions/checkout@v2
+#      - name : setup node
+#        uses: actions/setup-node@v2
+#        with:
+#          node-version: 'lts/*'
+#      - name: run test
+#        shell: bash
+#        run: |
+#          node -v
+#          npm install
+#          npm test
