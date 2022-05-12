@@ -6,4 +6,4 @@ jobs:
   run-npm-test4:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.my_reusable_workflow.yaml
+      - uses: ./my_reusable_workflow.yaml
